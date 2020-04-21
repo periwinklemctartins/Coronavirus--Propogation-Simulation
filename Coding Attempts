@@ -1,0 +1,32 @@
+import pandas as pd
+import torch
+import matplotlib.pyplot as plt
+import matplotlib           
+import numpy as np
+
+A = torch.tensor([[1,     1,     1,     0,     0,     0,     0,     0,     1,     0,     1,     1,     1],
+     [1,     1,     1,     0,     0,     1,     0,     0,     1,     0,     1,     1,     0],
+     [1,     1,     1,     0,     0,     1,     0,     1,     1,     0,     1,     1,     0],
+     [0,     0,     0,     1,     1,     0,     0,     0,     1,     1,     1,     0,     0],
+     [0,     0,     0,     1,     1,     0,     1,     0,     1,     1,     1,     0,     0],
+     [0,     1,     1,     0,     0,     1,     0,     1,     1,     0,     1,     1,     1],
+     [0,     0,     0,     0,     1,     0,     1,     0,     1,     1,     1,     0,     0],
+     [0,     0,     1,     0,     0,     1,     0,     1,     1,     0,     1,     1,     1],
+     [1,     1,     1,     1,     1,     1,     1,     1,     1,     1,     1,     1,     1],
+     [0,     0,     0,     1,     1,     0,     1,     0,     1,     1,     1,     0,     0],
+     [1,     1,     1,     1,     1,     1,     1,     1,     1,     1,     1,     1,     1],
+     [1,     1,     1,     0,     0,     1,     0,     1,     1,     0,     1,     1,     0],
+     [1,     0,     0,     0,     0,     1,     0,     1,     1,     0,     1,     0,     1]]);
+
+def SEImodel(theta,S,E,I):
+    alpha = theta[0]
+    beta  = theta[1]
+    gamma = theta[2]
+    mu    = theta[3]
+    kE    = theta[4]
+    kS    = theta[5]
+    kI    = theta[6]
+    
+   dSdt = -kSLS
+    
+    return dSdt, dEdt, dIdt
