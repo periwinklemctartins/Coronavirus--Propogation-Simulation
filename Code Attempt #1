@@ -30,3 +30,26 @@ def SEImodel(theta,S,E,I):
    dSdt = -kSLS
     
     return dSdt, dEdt, dIdt
+
+
+def integrateSEI(theta,S0,E0,I0,dt,nt):
+    
+    # vectors to save the results over time
+    Sout = torch.zeros(nt+1); Sout[0] = S0
+    Eout = torch.zeros(nt+1); Eout[0] = E0
+    Iout = torch.zeros(nt+1); Iout[0] = I0
+    
+    S = S0; E = E0; I = I0
+    for i in range(nt):
+        dSdt, dEdt, dIdt = SEImodel(theta,S,E,I)
+        S += dt*dSdt
+        E += dt*dEdt
+        I += dt*dIdt
+        
+        Sout[i+1] = S; Eout[i+1] = E; Iout[i+1] = I;
+       
+    if I >= 0.05:
+      print(S,E,I)
+      return Sout, Eout, Iout
+       
+    return Sout, Eout, Iout
