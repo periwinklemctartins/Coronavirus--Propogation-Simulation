@@ -69,3 +69,27 @@ def integrateSEI(theta,S0,E0,I0,dt,nt):
       return Sout, Eout, Iout
        
     return Sout, Eout, Iout
+    
+#Let's start with ALBERTA, starting on March 21
+    
+# We start with S0  as 99% of the population
+#               E0  1%
+#               no sick peaple
+S0 = 0.99; E0 = 0.01; I0 = 0.0; 
+
+# Set the duration for the simulation
+dt = 0.05; nt = 1000
+
+# We pick the parameters as follows
+alpha = 0.2
+beta  = 0.5
+gamma = 0.5
+mu    = 0.075
+theta = torch.tensor([alpha, beta, gamma, mu])
+
+S, E, I = integrateSEI(theta,S0,E0,I0,dt,nt)
+
+t = np.arange(nt+1)*dt
+plt.plot(t,S,t,E,t,I)
+
+print('maximum of infected people ', torch.max(I).item())
