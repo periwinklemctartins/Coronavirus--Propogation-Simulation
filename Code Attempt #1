@@ -41,7 +41,7 @@ def SEImodel(theta,S,E,I):
     kS    = theta[5]
     kI    = theta[6]
     
-   dSdt  = -kS*L*S - beta*E*S - gamma*I*S                # dS/dt
+   dSdt  = -kS*L*S - beta*E*S - gamma*I*S                 # dS/dt
    dEdt  = -kE*L*E + beta*E*S  + gamma*I*S - alpha*E      # dE/dt
    dIdt  = -kI*L*I + alpha*E - mu*I                       # dI/dt
     
@@ -73,19 +73,23 @@ def integrateSEI(theta,S0,E0,I0,dt,nt):
 #Let's start with ALBERTA, starting on March 21
     
 # We start with S0  as 99% of the population
-#               E0  1%
-#               no sick peaple
-S0 = 0.99; E0 = 0.01; I0 = 0.0; 
+#               E0  15% (Assumed for now)
+#               I0  0.0051247%
+S0 = 0.99; E0 = 0.15; I0 = 0.000051247; 
 
 # Set the duration for the simulation
 dt = 0.05; nt = 1000
 
 # We pick the parameters as follows
-alpha = 0.2
-beta  = 0.5
-gamma = 0.5
-mu    = 0.075
-theta = torch.tensor([alpha, beta, gamma, mu])
+    alpha =
+    beta  =
+    gamma = 
+    mu    = 
+    kE    = 
+    kS    = 
+    kI    = 
+
+theta = torch.tensor([alpha, beta, gamma, mu, kE, kS, kI])
 
 S, E, I = integrateSEI(theta,S0,E0,I0,dt,nt)
 
