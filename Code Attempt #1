@@ -3,7 +3,7 @@ import torch
 import matplotlib.pyplot as plt
 import matplotlib           
 import numpy as np
-
+                  #AB    #BC    #MB    #NB    #NL    #NT    #NS    #NU    #ON    #PE    #QC    #SK    #YT  
 A = torch.tensor([[1,     1,     1,     0,     0,     0,     0,     0,     1,     0,     1,     1,     1], #AB
                   [1,     1,     1,     0,     0,     1,     0,     0,     1,     0,     1,     1,     0], #BC
                   [1,     1,     1,     0,     0,     1,     0,     1,     1,     0,     1,     1,     0], #MB
