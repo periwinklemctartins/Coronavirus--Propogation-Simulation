@@ -1,7 +1,4 @@
 # Coronavirus: Propogation Simulation
 
 #Group members:
-#-Graham
-#-Cynthia
-#-Aaron
-#-Jordan
+Graham-Cynthia-Aaron-Jordan
