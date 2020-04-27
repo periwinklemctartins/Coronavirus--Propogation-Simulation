@@ -1,0 +1,51 @@
+﻿"Detailed confirmed cases of coronavirus disease (COVID-19) (Preliminary data), Public Health Agency of Canada" 1 2 3 4
+"Occasional"
+"Table: 13-10-0766-01"
+"",,"Canada",,,,,,,,,,,,
+"Case identifier number5","Reference period","Date case was last updated - month 6","Date case was last updated - day 6","Episode date - month 7","Episode date - day 7","Gender 8","Age group 9","Transmission 10","Hospitalization 11","Intensive care unit 12","Death 13","Hospitalization, previous status 11 14","Intensive care unit, previous status 12 14","Death, previous status 13 14"
+"1","2020","4","16","1","21","1","5","1","1","2","2","1","2","2"
+"2","2020","4","7","1","22","1","4","1","1","9","2","1","9","2"
+"3","2020","4","22","1","24","2","2","1","9","2","2","9","2","2"
+"4","2020","4","7","1","27","2","5","1","1","1","2","1","1","2"
+"5","2020","4","7","1","15","1","3","1","2","9","2","2","9","2"
+"6","2020","4","7","1","24","2","2","1","2","9","2","2","9","2"
+"7","2020","4","14","2","9","2","3","1","2","2","2","2","2","2"
+"8","2020","4","14","2","14","2","3","1","1","2","2","1","2","2"
+"9","2020","4","7","2","5","2","2","1","2","2","2","2","2","2"
+"10","2020","4","14","2","18","1","4","2","2","2","2","2","2","2"
+"11","2020","4","7","3","21","2","1","2","1","1","2","1","1","2"
+"12","2020","4","9","2","24","1","5","1","2","2","9","2","2","9"
+"13","2020","4","14","2","25","2","6","1","2","2","2","2","2","2"
+"14","2020","4","22","2","25","2","3","1","9","2","2","9","2","2"
+"15","2020","4","7","2","24","2","5","1","2","2","2","2","2","2"
+"16","2020","4","7","2","26","1","6","1","2","2","2","2","2","2"
+"17","2020","4","24","2","28","1","4","1","9","2","2","9","2","2"
+"18","2020","4","22","2","27","1","5","1","9","2","2","9","2","2"
+"19","2020","4","9","2","21","1","6","1","1","2","9","1","2","9"
+"20","2020","4","7","2","14","2","7","1","2","2","2","2","2","2"
+"21","2020","4","22","2","20","1","8","1","9","2","2","9","2","2"
+"22","2020","4","9","2","26","1","6","1","2","2","9","2","2","9"
+"23","2020","4","24","2","23","2","6","1","1","1","2","1","1","2"
+"24","2020","4","22","2","22","2","7","1","9","2","2","9","2","2"
+"25","2020","4","22","2","22","2","7","1","9","2","2","9","2","2"
+
+Symbol legend:
+
+Footnotes:
+1,"Source: Public Health Agency of Canada (PHAC), COVID-19 epidemiological reports, with contribution from Provincial/Territorial Ministries of Health. Map: Provincial and territorial case numbers (opens new window)"
+2,"Given that the COVID-19 pandemic is rapidly evolving, these data are considered preliminary. The data published by Statistics Canada only account for those where a detailed case report was provided by the provincial or territorial jurisdiction to the Public Health Agency of Canada (PHAC). Statistics Canada’s detailed preliminary confirmed cases will not match the total case reporting done at the provincial and territorial levels which are reported daily by each jurisdiction and compiled by the PHAC.  The discrepancy is due to delays associated with the submission of the detailed information, its capture and coding. Hence, Statistics Canada’s file on detailed case reporting is a subset of the total counts reported by the health authorities across Canada."
+3,Confirmed cases are laboratory confirmed cases for which a case report form has been received by the Public Health Agency of Canada (PHAC) from provincial or territorial partners.
+4,"On March 30th, 2020, a first set of detailed confirmed cases from the Public Health Agency of Canada (PHAC) was published in table 13-10-0767-01. These covered all of the detailed confirmed cases up to March 28th. On April 6th, the records from table 13-10-0767-01 were retained and updated into the new table 13-10-0766-01, but with new Statistics Canada Case identifier numbers. The table 13-10-0766-01 was updated again on April 7th, 2020, however, the Statistics Canada Case identifier number is not consistent between the two dates, nor is it consistent with table 13-10-0767-01."
+5,Statistics Canada generated case identifier number.
+6,Date case was last updated or date of upload to the database for new cases (month: MM and day: DD).
+7,"The episode date (month: MM and day: DD) is created from the earliest date available from the following series: Symptom Onset Date, Specimen Collection Date, Laboratory Testing Date, Date reported to the province/territory or Date reported to the Public Health Agency of Canada (PHAC). When no date is available, this field is considered 'Not stated' and given the value 99 for both month and day variables. These values are corrected as PHAC receives new information."
+8,"Gender codes: 1 = Male, 2 = Female, 3 = Non-binary, 9 = Not stated. These values are corrected as the Public Health Agency of Canada (PHAC) receives new information. It should be noted that the French form uses the term ‘sex’ contrary to the English form that uses the term ‘gender’. In the context of this table, the term gender is also used in French and the cases that have reported ‘other’ for the sex have been categorized as a ‘non-binary’ gender."
+9,"Age group codes: 1 = 0 to 19 years, 2 = 20 to 29 years, 3 = 30 to 39 years, 4 = 40 to 49 years, 5 = 50 to 59 years, 6 = 60 to 69 years, 7 = 70 to 79 years, 8 = 80 years or older, 99 = Not stated. These values are corrected as the Public Health Agency of Canada (PHAC) receives new information."
+10,Transmission codes: 1= Travel exposure – cases that had contact with a travel-related case or had travelled outside of Canada in the 14 days prior to illness onset. 2 = Community exposure – cases that had no known contact with a travel-related case and had not travelled outside of Canada in the 14 days prior to illness onset.  3 = Pending – confirmation on exposure setting is pending. These values are corrected as the Public Health Agency of Canada (PHAC) receives new information.
+11,"Hospitalization: 1 = Yes, 2 = No, 9 = Not Stated."
+12,"Patient was admitted to the intensive care unit: 1 = Yes, 2 = No, 9 = Not Stated."
+13,"Death: 1 = Yes, 2 = No, 9 = Not stated."
+14,"Indicates the previous status for the variable. When there is no change to any value, the previous status will be the same as the current value. New cases loaded to the database each day will display "".."" (Not available) for these previous status variables."
+
+"How to cite: Statistics Canada. Table 13-10-0766-01 Detailed confirmed cases of coronavirus disease (COVID-19) (Preliminary data), Public Health Agency of Canada"
+https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1310076601
